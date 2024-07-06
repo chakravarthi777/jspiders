@@ -1,0 +1,43 @@
+class Train //class1
+{
+	public static void carry()
+	{
+		System.out.println("carry method.");
+	}
+	public void move()
+	{
+		System.out.println("move method");
+		//calling static method of the same class by nsm
+		carry();
+	}
+}
+class Station //class2
+{
+	public void announce(int i)
+	{
+		System.out.println("announce method");
+		System.out.println(i);
+		//calling non static method of another class(Train) using orv.
+		Train t=new Train();
+		t.move();
+	}
+}
+class Mainclass2 //class3
+{
+	public void halt()
+	{
+		System.out.println("halt method.");
+		//calling non-static method of another calss(Station) using orv.
+		Station s=new Station();
+		s.announce(5);
+		//calling static method of another class(Train) by using class_Name
+		Train.carry();
+	}
+	public static void main(String[] args) 
+	{
+		//calling non-static method in static method of same class.
+		Mainclass2  m=new Mainclass2(); 
+		m.halt();
+		System.out.println("Hello World!");
+	}
+}

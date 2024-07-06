@@ -1,0 +1,16 @@
+class Watch 
+{
+	public static void setTime()
+	{
+		System.out.println("set Time");
+	}
+	public static void setDate()
+	{
+		System.out.println("Set Date");
+	}
+	public static void main(String[] args) 
+	{
+		setTime();
+		setDate();
+	}
+}

@@ -1,0 +1,25 @@
+class MainClass2
+{
+	public static void main(String[] args) 
+	{
+		Mobile obj1=new Mobile();
+		obj1.storePower();
+
+		Charger obj2=new Charger();
+		obj2.porvidePower();
+	}
+}
+class Mobile
+{
+	public void storePower()
+	{
+		System.out.println("StorePower...");
+	}
+}
+class Charger
+{
+	public void porvidePower()
+	{
+		System.out.println("providePower...");
+	}
+}

@@ -1,0 +1,11 @@
+class Profit
+{
+	public static int calculateprofit(int sp,int cp)
+	{
+		return sp-cp;
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("profit : "+calculateprofit(120,100)+" -Rs");
+	}
+}
